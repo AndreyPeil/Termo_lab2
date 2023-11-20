@@ -5,20 +5,29 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 def game_settings():
     clear_screen()
-    # Termo, Dueto or Quarteto / Game choice #
+    # Termo, Dueto or Quarteto / Game choice or exit #
     print('TERMO\n')
     print('Choose the game you wish to play:')
     print('1 - Solo')
     print('2 - Dueto')
     print('3 - Quarteto')
+    print('Type a letter or symbol to reset words played list.')
     print("Any other number to exit.")
     while True:
         try:
-            gamemode = input("What game do you want to play? ")
+            gamemode = int(input("What game do you want to play? "))
             return gamemode
         except ValueError:
-            print('Please, type a valid option!')
+            print('This feature only has an impact after you played at least once.')
+            reset = input("Do you wish to reset words so that they can appear again? [Press ""Y""] ").upper()
+            if reset == "Y":
+                reset_file = open("palavras_já_sorteadas.txt", "w")
+                reset_file.write("")
+                reset_file.close()
+            else:
+                pass
+            input('Returning to option select. Press enter.')
 def main():
     gamemode = game_settings()
-    termo_game.termo(gamemode)
+    termo_game.termo_main(gamemode)
 main()
