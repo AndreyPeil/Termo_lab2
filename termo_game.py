@@ -1,5 +1,6 @@
 import termo_raffle
 import valid_check
+import termo_gameplay
 def solo(words_used, possible_words, termo_words):
     termo_attempts = 0
     while termo_attempts < 6:
@@ -10,10 +11,15 @@ def solo(words_used, possible_words, termo_words):
                 pass
             else:
                 break
+        print(termo_words)
         words_used.append(player_input)
         termo_attempts += 1
+        if player_input in termo_words:
+            termo_gameplay.credits(True)
+    termo_gameplay.credits(False)
 def dueto(words_used, possible_words, termo_words):
     termo_attempts = 0
+    termo_success = 0
     while termo_attempts < 7:
         while True:
             player_input = input(">> ").lower()
@@ -22,10 +28,12 @@ def dueto(words_used, possible_words, termo_words):
                 pass
             else:
                 break
+        print(termo_words)
         words_used.append(player_input)
         termo_attempts += 1
 def quarteto(words_used, possible_words, termo_words):
     termo_attempts = 0
+    termo_success = 0
     while termo_attempts < 9:
         while True:
             player_input = input(">> ").lower()
@@ -34,13 +42,10 @@ def quarteto(words_used, possible_words, termo_words):
                 pass
             else:
                 break
+        print(termo_words)
         words_used.append(player_input)
         termo_attempts += 1
-def credits():
-    party_popper = "\U0001F389"
-    applause = "\U0001F44F"
-    print(f"CONGRATULATIONS! {applause} {party_popper}")
-def termo(gamemode):
+def termo_main(gamemode):
     words_used = []
     termo_words, possible_words = termo_raffle.word_of_the_run(gamemode)
     if gamemode == 1:
