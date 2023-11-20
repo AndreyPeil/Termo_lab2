@@ -1,4 +1,4 @@
-def credits(game_win):
+def credits(game_win, termo_attempts):
     if game_win == True:
         party_popper = "\U0001F389"
         applause = "\U0001F44F"
