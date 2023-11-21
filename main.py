@@ -26,8 +26,15 @@ def game_settings():
                 reset_file.close()
             else:
                 pass
-            input('Returning to option select. Press enter.')
+            input('Returning to option select. Press enter. ')
+def start_game():
+    while True:
+        gamemode = game_settings()
+        if gamemode != 1 and gamemode != 2 and gamemode != 3:
+            print("Goodybye, friend, see you another time!")
+            break
+        else:
+            termo_game.termo_main(gamemode)
 def main():
-    gamemode = game_settings()
-    termo_game.termo_main(gamemode)
+    start_game()
 main()
