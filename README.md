@@ -123,6 +123,14 @@
 
 > Imports: `Termo Game`.
 ### Função -> `Compare`
+> Recebe o input do player `player_input` e a palavra a ser comparada `word` e torna elas em listas de 5 letras.
+
+> Inicializa uma lista chamada `answer_list` com 5 strings `miss`.
+
+> Compara cada letra do input com a respectiva letra na palavra sorteada (1 com 1, 2 com 2...), caso sejam iguais, o `miss` do `answer_list` no mesmo index dessas letras se torna um `green` e elas são substituídas com um "0" e "" em `player_input_list` e `termo_list` respectivamente para retirá-las das próximas comparações e não dar erros (qualquer valor que não é uma letra do alfabeto serve contanto que eles sejam diferentes em cada lista -> "0" != "").
+
+>
+
 Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
 
 `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 42.
