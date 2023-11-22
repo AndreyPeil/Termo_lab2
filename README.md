@@ -52,11 +52,11 @@
 
 > Chamadas: `Main` -> `Main` -> `Start Game` -> Linha 35.
 ### Função -> `Solo`, `Dueto` e `Quarteto`
-'solo(words_used, possible_words, termo_words)' 
+Chamadas: `Termo Game` -> `Termo Main` -> Linha 93.
 
-'dueto(words_used, possible_words, termo_words)' 
+Chamadas: `Termo Game` -> `Termo Main` -> Linha 95.
 
-'quarteto(words_used, possible_words, termo_words)'
+Chamadas: `Termo Game` -> `Termo Main` -> Linha 97.
 
 ## Módulo: `Termo Raffle`
 > Módulo que faz o sorteio da(s) palavra(s) para o jogo.
@@ -103,11 +103,25 @@
 > `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 66.
 
 ## Módulo: `Termo Gameplay`
-'termo_gameplay.py'
+Imports: `Termo Game`
 ### Função -> `Compare`
-'compare(player_input, word)'
+Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
+
+`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 42.
+
+`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 72.
 ### Função -> `Credits`
-'credits(game_win, termo_attempts, termo_words)'
+Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 23.
+
+`Termo Game` -> `Termo Main` -> `Solo` -> Linha 28.
+
+`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 53.
+
+`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 58.
+
+`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 83.
+
+`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 88.
 
 ## Arquivo de Texto: `Palavras Termo`
 > Arquivo que contém as palavras a serem sorteadas no jogo.
