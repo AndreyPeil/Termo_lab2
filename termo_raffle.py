@@ -9,8 +9,6 @@ def word_of_the_run(gamemode):
         draw_times = 4
     elif gamemode == 1 or gamemode == 2:
         draw_times = gamemode
-    else:
-        return False, False
     while len(termo_words) < draw_times:
         number_draw = random.randint(0,9871)
         chosen_word = possible_words[number_draw]
