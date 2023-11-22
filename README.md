@@ -52,11 +52,21 @@
 
 > Chamadas: `Main` -> `Main` -> `Start Game` -> Linha 35.
 ### Função -> `Solo`, `Dueto` e `Quarteto`
-Chamadas: `Termo Game` -> `Termo Main` -> Linha 93.
+> Todas essas funções recebem os mesmos parâmetros, `words_used` (lista vazia que será preenchida com as palavras escritas pelo jogador para uso no módulo `valid_check`), `possible_words` e `termo_words` (Lista com 1 string em `solo`, 2 em `dueto` e 4 em `quarteto`).
 
-Chamadas: `Termo Game` -> `Termo Main` -> Linha 95.
+> As variáveis `termo_attempts` (contador de tentativas) e `loss_pass` são inicializadas. Em `dueto` e `quarteto` também é iniciada `termo_success` (contador de acertos).
 
-Chamadas: `Termo Game` -> `Termo Main` -> Linha 97.
+> Loop while que utiliza o contador de tentativas `termo_attempts` (6 em `solo`, 7 em `dueto` e 9 em `quarteto`) que é incrementado após a palavra digitada passar a verificação, ser comparada a sorteada e ser adicionada a lista de palavras usadas.
+
+> Input do player passa pela verificação, caso falhe, uma mensagem é imprimida no terminal e é pedido o input novamente, caso não dê problema, continua a execução padrão do código.
+
+> Chama a função `compare` do módulo `termo_gameplay` e adiciona a palavra a lista de palavras usadas `words_used`.
+  
+> Chamadas: `Solo`: `Termo Game` -> `Termo Main` -> Linha 93.
+
+`Dueto`: `Termo Game` -> `Termo Main` -> Linha 95.
+
+`Quarteto`: `Termo Game` -> `Termo Main` -> Linha 97.
 
 ## Módulo: `Termo Raffle`
 > Módulo que faz o sorteio da(s) palavra(s) para o jogo.
