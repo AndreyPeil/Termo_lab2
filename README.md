@@ -38,7 +38,11 @@
 > Chamadas: `Main` -> `Main` -> `Start Game` -> `Game Settings` -> Linha 6.
 
 ## Módulo: `Termo Game`
-'termo_game.py'
+> Módulo que chama todas as funções necessárias (no número de vezes necessárias) para o andamento do jogo.
+
+> Contém as funções `termo_main`, `solo`, `dueto` e `quarteto` e os imports dos seguintes módulos do programa: `termo_raffle`, `valid_check` e `termo_gameplay`.
+
+> Imports: `Main` 
 ### Função -> `Termo Main`
 'termo_main(gamemode)'
 ### Função -> `Solo`, `Dueto` e `Quarteto`
