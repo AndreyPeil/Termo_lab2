@@ -46,7 +46,9 @@ main.py
 > Chamadas: `Termo Game` -> `Termo Main` -> Linha 91.
 
 ## Módulo: `Valid Check`
-'valid_check.py'
+> Módulo que faz a validação do input do jogador.
+
+> Contém apenas a função `player_input_validation` que recebe `player_input`, `words_used` e `possible_words` como parâmetros e retorna True ou False. 
 ### Função -> `Player Input Validation`
 'player_input_validation(player_input, words_used, possible_words)'
 
