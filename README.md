@@ -29,9 +29,13 @@ main.py
 ## Módulo: `Termo Raffle`
 > Módulo que faz o sorteio da(s) palavra(s) para o jogo.
 
-> Contém apenas a função `word_of_the_run` que recebe a variável `gamemode` como parâmetro. 
+> Contém a função `word_of_the_run` que recebe a variável `gamemode` como parâmetro e o import do módulo `random` da biblioteca do Python. 
 ### Função -> `Word of the Run`
-> Recebe `gamemode` como parâmetro e lê os dados dos arquivos .txt, e atribue esses valores a variáveis em forma de duas listas de strings.
+> Recebe `gamemode` como parâmetro e lê os dados dos arquivos .txt, e atribui eles a variáveis em forma de duas listas de strings.
+
+> Utilizando `gamemode` determina quantas palavras devem ser sorteadas, atribuindo um valor entre 1,2 e 4 a variável `draw_times`.
+
+>
 
 ## Módulo: `Valid Check`
 'valid_check.py'
