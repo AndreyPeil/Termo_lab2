@@ -1,4 +1,4 @@
-# Sistema inspirado no jogo **Termo**. 
+# Sistema inspirado no jogo _Termo_. 
 
 **Trabalho para faculdade, formação em Sistemas de Informação.**
 
