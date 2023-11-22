@@ -6,51 +6,51 @@
 
 ## Módulo: `Main`
 main.py
-### Função -> Main
+### Função -> `Main`
 'main()'
-### Função -> Start Game
+### Função -> `Start Game`
 'start_game()'
-### Função -> Game Settings
+### Função -> `Game Settings`
 'game_settings()'
-### Função -> Clear Screen
+### Função -> `Clear Screen`
 'clear_screen()'
 
-## Módulo: Termo Game
+## Módulo: `Termo Game`
 'termo_game.py'
-### Função -> Termo Main
+### Função -> `Termo Main`
 'termo_main(gamemode)'
-### Função -> Solo, Dueto e Quarteto
+### Função -> `Solo`, `Dueto` e `Quarteto`
 'solo(words_used, possible_words, termo_words)' 
 
 'dueto(words_used, possible_words, termo_words)' 
 
 'quarteto(words_used, possible_words, termo_words)'
 
-## Módulo: Termo Raffle
+## Módulo: `Termo Raffle`
 'termo_raffle.py'
-### Função -> Word of the Run
+### Função -> `Word of the Run`
 'word_of_the_run(gamemode)'
 
-## Módulo: Valid Check
+## Módulo: `Valid Check`
 'valid_check.py'
-### Função -> Player Input Validation
+### Função -> `Player Input Validation`
 'player_input_validation(player_input, words_used, possible_words)'
 
-## Módulo: Termo Gameplay
+## Módulo: `Termo Gameplay`
 'termo_gameplay.py'
-### Função -> Compare
+### Função -> `Compare`
 'compare(player_input, word)'
-### Função -> Credits
+### Função -> `Credits`
 'credits(game_win, termo_attempts, termo_words)'
 
-## Arquivo de Texto: Palavras Termo
+## Arquivo de Texto: `Palavras Termo`
 > Arquivo que contém as palavras a serem sorteadas no jogo.
 
 > São 9871 palavras de 5 letras que não contêm acentuação.
 
 > Manipulação do Arquivo: Termo Raffle -> Word of the Run -> Linha 4.
 
-## Arquivo de Texto: Palavras já Sorteadas
+## Arquivo de Texto: `Palavras já Sorteadas`
 > Arquivo que contém as palavras que já foram sorteadas, começa vazio e é preenchido de acordo com as vitórias do jogador.
 
 > Pode ser resetado no menu de escolha de modo de jogo.
