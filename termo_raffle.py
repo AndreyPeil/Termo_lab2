@@ -12,7 +12,7 @@ def word_of_the_run(gamemode):
     else:
         return False, False
     while len(termo_words) < draw_times:
-        number_draw = random.randint(0,507)
+        number_draw = random.randint(0,9871)
         chosen_word = possible_words[number_draw]
         if chosen_word in termo_words:
             pass
