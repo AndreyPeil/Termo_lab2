@@ -54,7 +54,11 @@
 > Pode ser resetado no menu de escolha de modo de jogo.
 
 > Manipulação do Arquivo: Main -> Main -> Start Game -> Game Settings -> Linha 22.
+
 > Termo Game -> Termo Main -> Solo -> Linha 19.
+
 > Termo Game -> Termo Main -> Dueto -> Linha 48.
+
 > Termo Game -> Termo Main -> Quarteto -> Linha 78.
+
 > Termo Raffle -> Word of the Run -> Linha 5.
