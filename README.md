@@ -4,8 +4,8 @@
 
 **Por Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.**
 
-## Módulo: Main
-`main.py`
+## Módulo: `Main`
+main.py
 ### Função -> Main
 'main()'
 ### Função -> Start Game
