@@ -60,13 +60,19 @@
 
 > Input do player passa pela verificação, caso falhe, uma mensagem é imprimida no terminal e é pedido o input novamente, caso não dê problema, continua a execução padrão do código.
 
-> Chama a função `compare` do módulo `termo_gameplay` e adiciona a palavra a lista de palavras usadas `words_used`.
+> Chama a função `compare` do módulo `termo_gameplay` (é chamada 2 e 4 vezes em `dueto` e `quarteto`, respectivamente) e adiciona a palavra a lista de palavras usadas `words_used`.
+
+> Caso o jogador acerte uma das palavras em `dueto` e `quarteto`, a variável `termo_success` é incrementada.
+
+> Quando o jogador ganha o jogo (em `solo`, acerta a palavra, em `dueto` e `quarteto` a variável `termo_success` chega a 2 e 4), a(s) palavra(s) é(são) escrita(s) (append) no arquivo `palavras_já_sorteadas.txt` para não serem sorteadas de novo, True é atribuído a variável `loss_pass` (para que quando seja quebrado o while não seja chamada a função `credits` de novo), é chamada a função `credits` do módulo `termo_gameplay` mandando True, `termo_attempts` e `termo_words` e, por fim, é quebrado o while atribuindo 10 a `termo_attempts`.
+
+> Quando o jogador esgota as tentativas sem acertar a(s) palavra(s), `loss_pass` ainda é False e ele é mandado para `credits` com False como parâmetro ao invés de True.
   
 > Chamadas: `Solo`: `Termo Game` -> `Termo Main` -> Linha 93.
 
-`Dueto`: `Termo Game` -> `Termo Main` -> Linha 95.
+> `Dueto`: `Termo Game` -> `Termo Main` -> Linha 95.
 
-`Quarteto`: `Termo Game` -> `Termo Main` -> Linha 97.
+> `Quarteto`: `Termo Game` -> `Termo Main` -> Linha 97.
 
 ## Módulo: `Termo Raffle`
 > Módulo que faz o sorteio da(s) palavra(s) para o jogo.
@@ -113,8 +119,9 @@
 > `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 66.
 
 ## Módulo: `Termo Gameplay`
-> Módulo que contém e executa o principal elemento de uma jogatina de Termo, comparar a palavra sorteada com a palavra que o jogador e vê o quão próximo ele está de acertá-lá
-Imports: `Termo Game`
+> Módulo que contém e executa o principal elemento de uma jogatina de Termo, comparar a palavra sorteada com a palavra que o jogador digita e vê o quão próximo ele está de acertá-lá.
+
+> Imports: `Termo Game`.
 ### Função -> `Compare`
 Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
 
