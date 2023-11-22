@@ -1,11 +1,9 @@
 import termo_game
 import os
 def clear_screen():
-    # Clear the terminal screen for various operating systems #
     os.system('cls' if os.name == 'nt' else 'clear')
 def game_settings():
     clear_screen()
-    # Termo, Dueto or Quarteto / Game choice or exit #
     print('TERMO\n')
     print('Choose the game you wish to play:')
     print('1 - Solo')
