@@ -50,19 +50,19 @@ main.py
 
 > São 9871 palavras de 5 letras que não contêm acentuação.
 
-> Manipulação do Arquivo: Termo Raffle -> Word of the Run -> Linha 4.
+> Manipulação do Arquivo: `Termo Raffle` -> `Word of the Run` -> Linha 4.
 
 ## Arquivo de Texto: `Palavras já Sorteadas`
 > Arquivo que contém as palavras que já foram sorteadas, começa vazio e é preenchido de acordo com as vitórias do jogador.
 
 > Pode ser resetado no menu de escolha de modo de jogo.
 
-> Manipulação do Arquivo: Main -> Main -> Start Game -> Game Settings -> Linha 22.
+> Manipulação do Arquivo: `Main` -> `Main` -> `Start Game` -> `Game Settings` -> Linha 22.
 
-> Termo Game -> Termo Main -> Solo -> Linha 19.
+> `Termo Game` -> `Termo Main` -> `Solo` -> Linha 19.
 
-> Termo Game -> Termo Main -> Dueto -> Linha 48.
+> `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 48.
 
-> Termo Game -> Termo Main -> Quarteto -> Linha 78.
+> `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 78.
 
-> Termo Raffle -> Word of the Run -> Linha 5.
+> `Termo Raffle` -> `Word of the Run` -> Linha 5.
