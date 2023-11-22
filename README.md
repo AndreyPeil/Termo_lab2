@@ -5,7 +5,9 @@
 **Por Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.**
 
 ## Módulo: `Main`
-main.py
+> Módulo que inicia o programa e contém o menu de escolha de modo de jogo.
+
+> Contém as funções `main`, `start_game`, `clear_screen` e `game_settings` e os imports do módulo `termo_game` do programa e `os` da biblioteca do Python.
 ### Função -> `Main`
 'main()'
 ### Função -> `Start Game`
@@ -64,7 +66,7 @@ main.py
 
 > Verifica se a palavra não está entre as palavras possíveis (`possible_words`), serve para o funcionamento normal do jogo e para garantir que o usuário não digite palavras que contêm acentuação.
 
-> Chamadas: > `Termo Game` -> `Termo Main` -> `Solo` -> Linha 10.
+> Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 10.
 
 > `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 36.
 
