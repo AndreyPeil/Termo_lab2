@@ -27,9 +27,11 @@ main.py
 'quarteto(words_used, possible_words, termo_words)'
 
 ## Módulo: `Termo Raffle`
-'termo_raffle.py'
+> Módulo que faz o sorteio da(s) palavra(s) para o jogo.
+
+> Contém apenas a função `word_of_the_run` que recebe a variável `gamemode` como parâmetro. 
 ### Função -> `Word of the Run`
-'word_of_the_run(gamemode)'
+> Recebe `gamemode` como parâmetro e lê os dados dos arquivos .txt, e atribue esses valores a variáveis em forma de duas listas de strings.
 
 ## Módulo: `Valid Check`
 'valid_check.py'
