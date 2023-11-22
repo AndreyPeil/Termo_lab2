@@ -64,9 +64,9 @@
 
 > Caso o jogador acerte uma das palavras em `dueto` e `quarteto`, a variável `termo_success` é incrementada.
 
-> Quando o jogador ganha o jogo (em `solo`, acerta a palavra, em `dueto` e `quarteto` a variável `termo_success` chega a 2 e 4), a(s) palavra(s) é(são) escrita(s) (append) no arquivo `palavras_já_sorteadas.txt` para não serem sorteadas de novo, True é atribuído a variável `loss_pass` (para que quando seja quebrado o while não seja chamada a função `credits` de novo), é chamada a função `credits` do módulo `termo_gameplay` mandando True, `termo_attempts` e `termo_words` e, por fim, é quebrado o while atribuindo 10 a `termo_attempts`.
+> Quando o jogador ganha o jogo (em `solo`, acerta a palavra, em `dueto` e `quarteto` a variável `termo_success` chega a 2 e 4), a(s) palavra(s) é/são escrita(s) (append) no arquivo `palavras_já_sorteadas.txt` para não serem sorteadas de novo, True é atribuído a variável `loss_pass` (para que quando seja quebrado o while não seja chamada a função `credits` de novo), é chamada a função `credits` do módulo `termo_gameplay` mandando True, `termo_attempts` e `termo_words` e, por fim, é quebrado o while atribuindo 10 a `termo_attempts`.
 
-> Quando o jogador esgota as tentativas sem acertar a(s) palavra(s), `loss_pass` ainda é False e ele é mandado para `credits` com False como parâmetro ao invés de True.
+> Quando o jogador esgota as tentativas sem acertar a(s) palavra(s), ela(s) não é/são adicionada(s) a `palavras_já_sorteadas.txt` e `loss_pass` ainda é False e ele é mandado para `credits` com False como parâmetro ao invés de True.
   
 > Chamadas: `Solo`: `Termo Game` -> `Termo Main` -> Linha 93.
 
@@ -119,7 +119,7 @@
 > `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 66.
 
 ## Módulo: `Termo Gameplay`
-> Módulo que contém e executa o principal elemento de uma jogatina de Termo, comparar a palavra sorteada com a palavra que o jogador digita e vê o quão próximo ele está de acertá-lá.
+> Módulo que contém e executa o principal elemento de uma jogatina de Termo, comparar a palavra sorteada com a palavra que o jogador digita e vê o quão próximo ele está de acertá-lá junto dos "créditos" que representam uma tela de fim de jogo.
 
 > Imports: `Termo Game`.
 ### Função -> `Compare`
@@ -129,17 +129,21 @@ Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
 
 `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 72.
 ### Função -> `Credits`
-Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 23.
+> Em vitórias, `game_win` será True, e por isso será imprimida uma mensagem de vitória, parabenizando o jogador, mostrando quantas tentativas ele levou para acertar por meio de `termo_attempts` e quais eram as palavras. Enter retorna o usuário ao menu de escolha de jogo `game_settings`.
 
-`Termo Game` -> `Termo Main` -> `Solo` -> Linha 28.
+> Em derrotas, `game_win` será False, e por isso será imprimida uma mensagem de derrota e apenas serão mostrada as palavras do jogo. Enter retorna o usuário ao menu de escolha de jogo `game_settings`.
 
-`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 53.
+> Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 23.
 
-`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 58.
+> `Termo Game` -> `Termo Main` -> `Solo` -> Linha 28.
 
-`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 83.
+> `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 53.
 
-`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 88.
+> `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 58.
+
+> `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 83.
+
+> `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 88.
 
 ## Arquivo de Texto: `Palavras Termo`
 > Arquivo que contém as palavras a serem sorteadas no jogo.
