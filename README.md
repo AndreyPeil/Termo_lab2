@@ -9,13 +9,33 @@
 
 > Contém as funções `main`, `start_game`, `clear_screen` e `game_settings` e os imports do módulo `termo_game` do programa e `os` da biblioteca do Python.
 ### Função -> `Main`
-'main()'
+> Inicia o programa chamando a função `start_game`.
+
+> Chamadas: `Main` -> Linha 38. 
 ### Função -> `Start Game`
-'start_game()'
+> Chama a função `game_settings`, que contém o menu de escolha de modo de jogo.
+
+> Loop while que quebra caso o usuário digite um número diferente de 1, 2 ou 3 (correspondem aos modos de jogo) e sai do jogo.
+
+> Chama a função `termo_main` do módulo `termo_game` mandando como parâmetro a variável `gamemode`.
+
+>  Chamadas: `Main` -> `Main` -> Linha 37.
 ### Função -> `Game Settings`
-'game_settings()'
+> Chama a função `clear_screen` para limpar a tela do terminal.
+
+> Imprime o menu no terminal com 5 opções.
+
+> 1, 2 ou 3 escolhem um dos modos de jogo (Solo, Dueto e Quarteto, respectivamente) e continuam a execução padrão do código.
+
+> Como dito no menu, caso o usuário digite um número ou símbolo e cause um ValueError ele é levado a tela de reset do arquivo `palavras_já_sorteadas.txt`, onde caso ele digite "Y" o arquivo é resetado e qualquer outro valor digitado mantém o arquivo como está.
+
+> Qualquer outro número inteiro leva a saída do jogo quebrando o loop while presente em `start_game`.
+
+> Chamadas: `Main` -> `Main` -> `Start Game` -> Linha 30.
 ### Função -> `Clear Screen`
-'clear_screen()'
+> Limpa a tela do terminal caso chamada.
+
+> Chamadas: `Main` -> `Main` -> `Start Game` -> `Game Settings` -> Linha 6.
 
 ## Módulo: `Termo Game`
 'termo_game.py'
