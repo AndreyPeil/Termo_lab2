@@ -1,8 +1,8 @@
 # Sistema inspirado no jogo "Termo". 
 
-Trabalho para faculdade, formação em Sistemas de Informação.
+**Trabalho para faculdade, formação em Sistemas de Informação.**
 
-Por Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.
+**Por Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.**
 
 ## Módulo: Main
 'main.py'
