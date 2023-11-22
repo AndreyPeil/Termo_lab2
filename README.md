@@ -127,15 +127,19 @@
 
 > Inicializa uma lista chamada `answer_list` com 5 strings `miss`.
 
-> Compara cada letra do input com a respectiva letra na palavra sorteada (1 com 1, 2 com 2...), caso sejam iguais, o `miss` do `answer_list` no mesmo index dessas letras se torna um `green` e elas são substituídas com um "0" e "" em `player_input_list` e `termo_list` respectivamente para retirá-las das próximas comparações e não dar erros (qualquer valor que não é uma letra do alfabeto serve contanto que eles sejam diferentes em cada lista -> "0" != "").
+> Compara cada letra do input com a respectiva letra na palavra sorteada (1 com 1, 2 com 2...), caso sejam iguais, o `miss` do `answer_list` no mesmo índice dessas letras é tornado em um `green` e elas são substituídas com um "0" e "" em `player_input_list` e `termo_list` respectivamente para retirá-las das próximas comparações e não dar erros (qualquer valor que não é uma letra do alfabeto serve contanto que eles sejam diferentes em cada lista -> "0" != "").
 
->
+> Compara as letras do input do player com as outras letras da palavra sorteada, pulando a letra no mesmo índice, para evitar erros e confusões, as letras "verdes" foram substituídas e a cada letra "amarela" detectada elas passam pelo mesmo processo, quando letras iguais são encontradas o `miss` do `answer_list` no índice do `player_input_list` é tornado em um `yellow`.
 
-Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
+> É criada uma segunda lista com as letras de `player_input` que são printadas de verde, amarelo ou preto conforme o índice de `answer_list`.
 
-`Termo Game` -> `Termo Main` -> `Dueto` -> Linha 42.
+> Nada é retornado, então nenhuma modificação a(s) palavra(s) sorteada(s) é salva.
 
-`Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 72.
+> Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
+
+> `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 42.
+
+> `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 72.
 ### Função -> `Credits`
 > Em vitórias, `game_win` será True, e por isso será imprimida uma mensagem de vitória, parabenizando o jogador, mostrando quantas tentativas ele levou para acertar por meio de `termo_attempts` e quais eram as palavras. Enter retorna o usuário ao menu de escolha de jogo `game_settings`.
 
