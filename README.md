@@ -42,9 +42,15 @@
 
 > Contém as funções `termo_main`, `solo`, `dueto` e `quarteto` e os imports dos seguintes módulos do programa: `termo_raffle`, `valid_check` e `termo_gameplay`.
 
-> Imports: `Main` 
+> Imports: `Main`.
 ### Função -> `Termo Main`
-'termo_main(gamemode)'
+> Inicializa `words_used` que será usada no módulo `valid_check`.
+
+> Chama a função `word_of_the_run` do módulo `termo_raffle` mandando `gamemode` (o modo de jogo escolhido) como parâmetro e recebendo `termo_words` (as palavras sorteadas) e `possible_words` (as palavras possíveis).
+
+> Dependendo do valor de `gamemode` chama uma das funções que veremos abaixo para prosseguir com a execução do jogo.
+
+> Chamadas: `Main` -> `Main` -> `Start Game` -> Linha 35.
 ### Função -> `Solo`, `Dueto` e `Quarteto`
 'solo(words_used, possible_words, termo_words)' 
 
