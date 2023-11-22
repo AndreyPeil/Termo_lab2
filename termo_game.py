@@ -20,12 +20,12 @@ def solo(words_used, possible_words, termo_words):
             played_file.write(termo_words[0] + "\n")
             played_file.close()
             loss_pass = True
-            termo_gameplay.credits(True, termo_attempts)
+            termo_gameplay.credits(True, termo_attempts, termo_words)
             termo_attempts = 10
     if loss_pass == True:
         pass
     else:
-        termo_gameplay.credits(False, termo_attempts)
+        termo_gameplay.credits(False, termo_attempts, termo_words)
 def dueto(words_used, possible_words, termo_words):
     termo_attempts = 0
     loss_pass = False
@@ -50,12 +50,12 @@ def dueto(words_used, possible_words, termo_words):
                 played_file.write(termo_words[word] + "\n")
             played_file.close()
             loss_pass = True
-            termo_gameplay.credits(True, termo_attempts)
+            termo_gameplay.credits(True, termo_attempts, termo_words)
             termo_attempts = 10
     if loss_pass == True:
         pass
     else:
-        termo_gameplay.credits(False, termo_attempts)
+        termo_gameplay.credits(False, termo_attempts, termo_words)
 def quarteto(words_used, possible_words, termo_words):
     termo_attempts = 0
     loss_pass = False
@@ -80,12 +80,12 @@ def quarteto(words_used, possible_words, termo_words):
                 played_file.write(termo_words[word] + "\n")
             played_file.close()
             loss_pass = True
-            termo_gameplay.credits(True, termo_attempts)
+            termo_gameplay.credits(True, termo_attempts, termo_words)
             termo_attempts = 10
     if loss_pass == True:
         pass
     else:
-        termo_gameplay.credits(False, termo_attempts)
+        termo_gameplay.credits(False, termo_attempts, termo_words)
 def termo_main(gamemode):
     words_used = []
     termo_words, possible_words = termo_raffle.word_of_the_run(gamemode)
