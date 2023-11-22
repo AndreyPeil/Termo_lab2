@@ -103,6 +103,7 @@ Chamadas: `Termo Game` -> `Termo Main` -> Linha 97.
 > `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 66.
 
 ## Módulo: `Termo Gameplay`
+> Módulo que contém e executa o principal elemento de uma jogatina de Termo, comparar a palavra sorteada com a palavra que o jogador e vê o quão próximo ele está de acertá-lá
 Imports: `Termo Game`
 ### Função -> `Compare`
 Chamadas: `Termo Game` -> `Termo Main` -> `Solo` -> Linha 15.
