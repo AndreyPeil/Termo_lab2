@@ -54,7 +54,21 @@ main.py
 
 > Imports: `Termo Game`. 
 ### Função -> `Player Input Validation`
-'player_input_validation(player_input, words_used, possible_words)'
+> Recebe `player_input`, `words_used` e `possible_words` como parâmetros e retorna True, apenas caso não falhe nenhuma verificação, ou False, no caso contrário.
+
+> Verifica o tamanho da palavra, apenas podendo ter 5 letras nela conforme as regras do jogo.
+
+> Evita que seja usada a mesma palavra mais de uma vez, verificando se ela está na lista `words_used`, servindo como conveniência ao jogador e uma prevenção para que não posso ganhar o `Dueto` e o `Quarteto` apenas digitando a mesma palavra 2 ou 4 vezes, respectivamente.
+
+> Utilizando a função isalpha() do Python, verifica se as letras estão no alfabeto, para garantir que não são números ou símbolos.
+
+> Verifica se a palavra não está entre as palavras possíveis (`possible_words`), serve para o funcionamento normal do jogo e para garantir que o usuário não digite palavras que contêm acentuação.
+
+> Chamadas: > `Termo Game` -> `Termo Main` -> `Solo` -> Linha 10.
+
+> `Termo Game` -> `Termo Main` -> `Dueto` -> Linha 36.
+
+> `Termo Game` -> `Termo Main` -> `Quarteto` -> Linha 66.
 
 ## Módulo: `Termo Gameplay`
 'termo_gameplay.py'
