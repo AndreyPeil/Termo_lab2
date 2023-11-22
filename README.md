@@ -39,6 +39,10 @@ main.py
 
 > É sorteado um número entre 0 e 9871 (tamanho da lista `possible_words`) que é utilizado como índice para atribuir um valor da lista `possible_words` a variável `chosen_word`.
 
+> Verifica se `chosen_word` já está na lista de palavras sorteadas ou palavras já jogadas (`termo_words` e `played_words`, respectivamente), caso não, adiciona ela a `termo_words`, caso esteja em uma delas, não é adicionada.
+
+ > Fecha a ligação com os arquivos .txt e retorna a lista de palavras sorteadas (`termo_words`) e a lista de palavras possíveis (`possible_words`).
+
 ## Módulo: `Valid Check`
 'valid_check.py'
 ### Função -> `Player Input Validation`
