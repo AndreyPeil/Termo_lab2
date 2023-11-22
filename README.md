@@ -33,9 +33,11 @@ main.py
 ### Função -> `Word of the Run`
 > Recebe `gamemode` como parâmetro e lê os dados dos arquivos .txt, e atribui eles a variáveis em forma de duas listas de strings.
 
-> Utilizando `gamemode` determina quantas palavras devem ser sorteadas, atribuindo um valor entre 1,2 e 4 a variável `draw_times`.
+> Utilizando `gamemode` determina quantas palavras devem ser sorteadas, atribuindo um valor entre 1, 2 e 4 a variável `draw_times`.
 
->
+> Loop while que é executado enquanto o tamanho da lista `termo_words` for menor que a variável `draw_times` garantindo que o número certo de palavras seja sorteado.
+
+> É sorteado um número entre 0 e 9871 (tamanho da lista `possible_words`) que é utilizado como índice para atribuir um valor da lista `possible_words` a variável `chosen_word`.
 
 ## Módulo: `Valid Check`
 'valid_check.py'
