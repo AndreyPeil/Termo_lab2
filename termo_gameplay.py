@@ -25,15 +25,27 @@ def compare(player_input, word):
         else:
             print(f'\033[30m{correct_list[answer]} \033[0m', end='|')
     print()
-def credits(game_win, termo_attempts):
+def credits(game_win, termo_attempts, termo_words):
     if game_win == True:
         party_popper = "\U0001F389"
         applause = "\U0001F44F"
         print(f"CONGRATULATIONS! {applause} {party_popper}")
-        print(f"Attempts taken to win: {termo_attempts}")
+        print(f"Attempts taken to win: {termo_attempts}.")
+        if len(termo_words) == 1:
+            print(f"Word was: {termo_words[0]}.")
+        elif len(termo_words) == 2:
+            print(f"Words were: {termo_words[0]} and {termo_words[1]}.")
+        elif len(termo_words) == 4:
+            print(f"Words were: {termo_words[0]}, {termo_words[1]}, {termo_words[2]} and {termo_words[3]}.")
         print("Group project by Andrey and Otavio.")
         input("Press enter to play again. ")
     else:
         print("You lose, try again next time.")
+        if len(termo_words) == 1:
+            print(f"Word was: {termo_words[0]}.")
+        elif len(termo_words) == 2:
+            print(f"Words were: {termo_words[0]} and {termo_words[1]}.")
+        elif len(termo_words) == 4:
+            print(f"Words were: {termo_words[0]}, {termo_words[1]}, {termo_words[2]} and {termo_words[3]}.")
         print("Group project by Andrey and Otavio.")
         input("Press enter to play again. ")
