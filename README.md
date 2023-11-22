@@ -1,4 +1,4 @@
-# Sistema inspirado no jogo "Termo". 
+# Sistema inspirado no jogo "Termo `#00FF00`". 
 
 **Trabalho para faculdade, formação em Sistemas de Informação.**
 
