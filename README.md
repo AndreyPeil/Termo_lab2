@@ -1,5 +1,6 @@
-# Jogo "Termo", Trabalho para faculdade, formação em Sistemas de Informação.
-# Por: Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.
+# Jogo "Termo". 
+# Trabalho para faculdade, formação em Sistemas de Informação.
+# Por Andrey Ricardo Lucca Peil e Otávio Ferreira Dahlke.
 
 ## Módulo: Main
 'main.py'
@@ -18,7 +19,9 @@
 'termo_main(gamemode)'
 ### Função -> Solo, Dueto e Quarteto
 'solo(words_used, possible_words, termo_words)' 
+
 'dueto(words_used, possible_words, termo_words)' 
+
 'quarteto(words_used, possible_words, termo_words)'
 
 ## Módulo: Termo Raffle
@@ -39,7 +42,19 @@
 'credits(game_win, termo_attempts, termo_words)'
 
 ## Arquivo de Texto: Palavras Termo
-'palavras_termo.txt'
+> Arquivo que contém as palavras a serem sorteadas no jogo.
+
+> São 9871 palavras de 5 letras que não contêm acentuação.
+
+> Manipulação do Arquivo: Termo Raffle -> Word of the Run -> Linha 4.
 
 ## Arquivo de Texto: Palavras já Sorteadas
-'palavras_já_sorteadas.txt'
+> Arquivo que contém as palavras que já foram sorteadas, começa vazio e é preenchido de acordo com as vitórias do jogador.
+
+> Pode ser resetado no menu de escolha de modo de jogo.
+
+> Manipulação do Arquivo: Main -> Main -> Start Game -> Game Settings -> Linha 22.
+> Termo Game -> Termo Main -> Solo -> Linha 19.
+> Termo Game -> Termo Main -> Dueto -> Linha 48.
+> Termo Game -> Termo Main -> Quarteto -> Linha 78.
+> Termo Raffle -> Word of the Run -> Linha 5.
