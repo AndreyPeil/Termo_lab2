@@ -90,7 +90,7 @@
 
 > Verifica o tamanho da palavra, apenas podendo ter 5 letras nela conforme as regras do jogo.
 
-> Evita que seja usada a mesma palavra mais de uma vez, verificando se ela está na lista `words_used`, servindo como conveniência ao jogador e uma prevenção para que não posso ganhar o `Dueto` e o `Quarteto` apenas digitando a mesma palavra 2 ou 4 vezes, respectivamente.
+> Evita que seja usada a mesma palavra mais de uma vez, verificando se ela está na lista `words_used`, servindo como conveniência ao jogador e uma prevenção para que não possa ganhar o `Dueto` e o `Quarteto` apenas digitando a mesma palavra 2 ou 4 vezes, respectivamente.
 
 > Utilizando a função isalpha() do Python, verifica se as letras estão no alfabeto, para garantir que não são números ou símbolos.
 
