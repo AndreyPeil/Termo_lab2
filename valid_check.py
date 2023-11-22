@@ -10,7 +10,7 @@ def player_input_validation(player_input, words_used, possible_words):
         print("Word can only contain letters from the BR Alphabet.")
         return alphabet_check
     elif player_input not in possible_words:
-        print("Word not found in game data, make sure to not use accentuation marks.")
+        print("Word not found in game data, make sure to not use diacritics and words that have them.")
         return False
     else:
         return True
